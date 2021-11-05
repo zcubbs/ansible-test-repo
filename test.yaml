@@ -1,0 +1,8 @@
+---
+
+- name: Test Playbook
+  hosts: all
+  collections:
+    - mrc.mrc_general
+  roles:
+    - { role: mrc.mrc_general.ping, become: no}
